@@ -8,7 +8,9 @@
     "render": "remotion render src/index.ts RishehIntro out/risheh-motion-studio.mp4",
     "validate": "node scripts/validate-output.mjs",
     "check:tools": "node scripts/check-tools.mjs",
-    "setup:hyperframes": "node scripts/setup-hyperframes.mjs"
+    "setup:hyperframes": "node scripts/setup-hyperframes.mjs",
+    "typecheck": "tsc --noEmit",
+    "ci": "npm run typecheck && npm run render && npm run validate"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",
@@ -24,5 +26,8 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
