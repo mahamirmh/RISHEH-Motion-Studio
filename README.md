@@ -279,7 +279,7 @@ The local skills above are already versioned with this repository. To add upstre
 - Runtime dependencies now include Remotion, GSAP, Motion, Lottie Web, and HyperFrames.
 - Ten project-local skills cover creative direction, motion craft, launch films, audio, both render paths, web motion, Lottie, short-form, and QA.
 - The integration matrix records all 20 original sources, their intended roles, and how they map into this workspace.
-- Two short links in the original list could not be independently mapped to a canonical repository; those entries are explicitly marked unresolved rather than guessed.
+- All 20 entries now have a canonical source URL or an explicit framework/library URL in the integration matrix. Upstream source code is not copied wholesale; each capability is mapped to a local skill or runtime dependency, and direct imports remain subject to license/API review.
 - Dependency installation, CLI initialization, and actual renders still need to be run in an environment with Node.js, browser dependencies, and FFmpeg. Adding a dependency to `package.json` does not mean it has already been installed or tested.
 
 See [Source Integration Policy](docs/integration-policy.md) and [Source Integration Matrix](docs/source-integration-matrix.json).
