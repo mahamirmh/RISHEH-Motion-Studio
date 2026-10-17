@@ -1,0 +1,25 @@
+{
+  "name": "risheh-motion-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prompt-driven motion video production starter using Remotion and Claude Code",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts RishehIntro out/risheh-motion-studio.mp4",
+    "validate": "node scripts/validate-output.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "gsap": "^3.15.0",
+    "lottie-web": "^5.12.2",
+    "motion": "^12.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.8.0"
+  }
+}
