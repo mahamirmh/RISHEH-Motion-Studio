@@ -112,6 +112,12 @@ flowchart TD
 5. **Truthful creative.** Never invent product metrics, customer logos, testimonials, product capabilities, or factual claims.
 6. **License-aware.** Verify the license and terms of every dependency, repository, font, music track, and asset before commercial use.
 
+## 📖 راهنمای فارسی استفاده با هوش مصنوعی
+
+**[راهنمای کامل استفاده با Claude Code، Codex، Cursor و Copilot + جدول وضعیت ادغام ۲۰ منبع](docs/AI-USAGE-GUIDE.fa.md)**
+
+برای ایجنت‌های کدنویسی غیر از Claude Code، دستورالعمل‌های مشترک در **[AGENTS.md](AGENTS.md)** قرار دارد. فهرست ۲۰ منبع، تفکیک dependency از Skill محلی و منابع صرفاً مرجع، در راهنمای فارسی و [Integration Matrix](docs/source-integration-matrix.json) توضیح داده شده است.
+
 ## 🚀 Quick start
 
 ### Requirements
@@ -160,7 +166,7 @@ npm run check:tools
 
 ## 🤖 Use it with Claude Code
 
-Open the repository in Claude Code. The project instructions live in `CLAUDE.md`, and the focused workflow is in `.claude/skills/motion-video/SKILL.md`.
+Open the repository in Claude Code. The project instructions live in `CLAUDE.md` and `AGENTS.md`; see the ten focused project-local skills under `.claude/skills/` and the [Persian AI usage guide](docs/AI-USAGE-GUIDE.fa.md).
 
 Example request:
 
@@ -279,7 +285,7 @@ The local skills above are already versioned with this repository. To add upstre
 - Runtime dependencies now include Remotion, GSAP, Motion, Lottie Web, and HyperFrames.
 - Ten project-local skills cover creative direction, motion craft, launch films, audio, both render paths, web motion, Lottie, short-form, and QA.
 - The integration matrix records all 20 original sources, their intended roles, and how they map into this workspace.
-- All 20 entries now have a canonical source URL or an explicit framework/library URL in the integration matrix. Upstream source code is not copied wholesale; each capability is mapped to a local skill or runtime dependency, and direct imports remain subject to license/API review.
+- All 20 entries have a recorded upstream URL or framework/library URL in the integration matrix; mappings for entries #4 and #15 should be checked against the original shortened links before treating them as independently verified. Upstream source code is not copied wholesale; each capability is mapped to a local skill or runtime dependency, and direct imports remain subject to license/API review.
 - Dependency installation, CLI initialization, and actual renders still need to be run in an environment with Node.js, browser dependencies, and FFmpeg. Adding a dependency to `package.json` does not mean it has already been installed or tested.
 
 See [Source Integration Policy](docs/integration-policy.md) and [Source Integration Matrix](docs/source-integration-matrix.json).
