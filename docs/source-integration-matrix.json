@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "project": "RISHEH Motion Studio",
+  "policy": "Capabilities are integrated through original project-local skills and selected runtime dependencies. Third-party source code is not copied wholesale; each source is mapped to a role and should be verified for current API and license before direct import.",
+  "sources": [
+    {
+      "n": 1,
+      "name": "claude-motion",
+      "url": "https://github.com/whaleyxbt/claude-motion",
+      "role": "timeline-first film workflow, reusable visual patterns, audio/review loop",
+      "integration": "local skills: motion-director, beat-sync-audio, motion-quality-gate; evaluate as a separate full example project"
+    },
+    {
+      "n": 2,
+      "name": "claude-motion-design",
+      "url": "https://github.com/howseen-ai/claude-motion-design",
+      "role": "HTML/Playwright/FFmpeg frame rendering and motion blur",
+      "integration": "hyperframes-production workflow and browser-renderer path; do not mix its runtime into Remotion scenes"
+    },
+    {
+      "n": 3,
+      "name": "motion-graphics-skills",
+      "url": "https://github.com/charlie947/motion-graphics-skills",
+      "role": "launch-grade short-form motion skill pack",
+      "integration": "product-launch-film and motion-graphics-shortform"
+    },
+    {
+      "n": 4,
+      "name": "claude-remotion-skill",
+      "url": "https://github.com/cmak34/claude-remotion-skill",
+      "role": "Remotion workflow and reusable video components",
+      "integration": "remotion-production; inspect upstream template before importing components"
+    },
+    {
+      "n": 5,
+      "name": "klik-anim-skill-creation",
+      "url": "https://t.co/XWqUnn4v7o",
+      "role": "animation/camera skill source from original list",
+      "integration": "canonical target not independently confirmed; kept as unresolved candidate, do not auto-install"
+    },
+    {
+      "n": 6,
+      "name": "hyperframes-motion-reel-skill",
+      "url": "https://github.com/Sunwood-ai-labs/hyperframes-motion-reel-skill",
+      "role": "beat-synced showreels using HyperFrames/GSAP/SVG/Canvas",
+      "integration": "hyperframes-production, beat-sync-audio, motion-quality-gate"
+    },
+    {
+      "n": 7,
+      "name": "product-launch-motion",
+      "url": "https://github.com/AbubakrChan/product-launch-motion",
+      "role": "product launch storytelling, narration synchronization, sound design",
+      "integration": "product-launch-film and beat-sync-audio"
+    },
+    {
+      "n": 8,
+      "name": "animate",
+      "url": "https://t.co/xafT2UPXUe",
+      "role": "storyboard/short animation skill source from original list",
+      "integration": "canonical target not independently confirmed; concepts covered by motion-director; pending source verification"
+    },
+    {
+      "n": 9,
+      "name": "motion-design-skills",
+      "url": "https://github.com/iart-ai/motion-design-skills",
+      "role": "animation fundamentals, art direction, composition, color and type",
+      "integration": "motion-design-principles"
+    },
+    {
+      "n": 10,
+      "name": "hyperframes-student-kit",
+      "url": "https://github.com/nateherkai/hyperframes-student-kit",
+      "role": "HyperFrames examples, setup, beat sync, short-form workflow",
+      "integration": "separate HyperFrames backend; do not import sample media or secrets blindly"
+    },
+    {
+      "n": 11,
+      "name": "HyperFrames",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "role": "HTML-to-video engine and domain skills",
+      "integration": "optional independent renderer backend via hyperframes CLI"
+    },
+    {
+      "n": 12,
+      "name": "Remotion",
+      "url": "https://github.com/remotion-dev/remotion",
+      "role": "React-based frame-accurate video renderer",
+      "integration": "primary renderer and existing src/ composition"
+    },
+    {
+      "n": 13,
+      "name": "Remotion Skills",
+      "url": "https://github.com/remotion-dev/skills",
+      "role": "official agent workflows and Remotion best practices",
+      "integration": "remotion-production plus documented optional official skill installation"
+    },
+    {
+      "n": 14,
+      "name": "GSAP",
+      "url": "https://github.com/greensock/GSAP",
+      "role": "timeline animation and choreography",
+      "integration": "runtime dependency; use for HTML/HyperFrames or complex web timelines"
+    },
+    {
+      "n": 15,
+      "name": "motion-design-skill",
+      "url": "https://github.com/cth9191/motion-design",
+      "role": "motion design skill source, potentially external generation integration",
+      "integration": "principles adapted; external provider setup not enabled automatically"
+    },
+    {
+      "n": 16,
+      "name": "awesome-motion-design-agent-skills",
+      "url": "https://github.com/iart-ai/awesome-motion-skills",
+      "role": "discovery catalog for specialist motion skills",
+      "integration": "reference catalog only; not a runtime dependency"
+    },
+    {
+      "n": 17,
+      "name": "motion-graphics",
+      "url": "https://github.com/cskwork/motion-graphics-skill",
+      "role": "product-capture launch videos and vertical shorts",
+      "integration": "motion-graphics-shortform and product-launch-film"
+    },
+    {
+      "n": 18,
+      "name": "motion-dev-animations-skill",
+      "url": "https://github.com/199-biotechnologies/motion-dev-animations-skill",
+      "role": "Motion.dev UI animation, scroll, gesture and spring patterns",
+      "integration": "web-motion and motion package"
+    },
+    {
+      "n": 19,
+      "name": "Motion",
+      "url": "https://github.com/motiondivision/motion",
+      "role": "React/web interface animation library",
+      "integration": "runtime dependency; use for UI/web motion, not the primary video renderer"
+    },
+    {
+      "n": 20,
+      "name": "lottie-web",
+      "url": "https://github.com/airbnb/lottie-web",
+      "role": "playback of existing Lottie JSON assets",
+      "integration": "runtime dependency and lottie-assets skill"
+    }
+  ]
+}
