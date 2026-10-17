@@ -152,6 +152,7 @@ out/risheh-motion-studio.mp4
 
 ```bash
 npm run validate
+npm run check:tools
 ```
 
 > [!IMPORTANT]
@@ -227,6 +228,57 @@ The workflow should move through these stages:
 | HyperFrames and community skills | Candidates to evaluate | A verified capability is missing from the core workflow |
 
 **Do not install every candidate by default.** First verify its canonical source, maintenance status, license, setup requirements, and whether it overlaps with an existing tool. See [Source inventory](docs/source-inventory.md).
+
+## 🧩 Integrated motion source system
+
+The 20 original sources are now mapped in [`docs/source-integration-matrix.json`](docs/source-integration-matrix.json). The project uses **capability integration**, not a blind copy of 20 overlapping repositories.
+
+### Project-local Claude Code skills
+
+| Skill | Responsibility |
+|---|---|
+| `motion-director` | Brief → concept → storyboard and shot list |
+| `motion-design-principles` | Timing, easing, composition, typography and accessibility |
+| `product-launch-film` | Product teasers, launch films, feature proof and CTA |
+| `beat-sync-audio` | Audio timing, beat map, narration and sound QA |
+| `remotion-production` | React scenes, frame timing and Remotion rendering |
+| `hyperframes-production` | Isolated HTML/GSAP/SVG/Canvas video projects |
+| `web-motion` | Motion/GSAP interface animations |
+| `lottie-assets` | Existing Lottie JSON playback and fallback strategy |
+| `motion-graphics-shortform` | Vertical shorts, B-roll and aspect-ratio-specific layout |
+| `motion-quality-gate` | Technical, visual, audio and factual review |
+
+Claude Code discovers these project-level instructions under `.claude/skills/`. They are original integration skills informed by the capabilities of the listed tools; third-party repositories have not been copied wholesale.
+
+### Two separate rendering paths
+
+- **Remotion (default):** React-based, frame-accurate video. Use `npm run studio` and `npm run render`.
+- **HyperFrames (optional):** HTML-native video with GSAP/SVG/Canvas. It has its own project format and stays isolated under `videos/hyperframes-demo/`.
+
+To initialize the optional HyperFrames example workspace:
+
+```bash
+npm install
+npm run setup:hyperframes
+```
+
+This command creates a separate example project and leaves the Remotion root untouched. Check the installed HyperFrames CLI help if its options change.
+
+To inspect local tool availability:
+
+```bash
+npm run check:tools
+```
+
+### Integration coverage and honest status
+
+- Runtime dependencies now include Remotion, GSAP, Motion, Lottie Web, and HyperFrames.
+- Ten project-local skills cover creative direction, motion craft, launch films, audio, both render paths, web motion, Lottie, short-form, and QA.
+- The integration matrix records all 20 original sources, their intended roles, and how they map into this workspace.
+- Two short links in the original list could not be independently mapped to a canonical repository; those entries are explicitly marked unresolved rather than guessed.
+- Dependency installation, CLI initialization, and actual renders still need to be run in an environment with Node.js, browser dependencies, and FFmpeg. Adding a dependency to `package.json` does not mean it has already been installed or tested.
+
+See [Source Integration Policy](docs/integration-policy.md) and [Source Integration Matrix](docs/source-integration-matrix.json).
 
 ## 📐 Output formats
 
