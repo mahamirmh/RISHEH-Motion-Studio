@@ -270,6 +270,10 @@ To inspect local tool availability:
 npm run check:tools
 ```
 
+### Optional upstream skill refresh
+
+The local skills above are already versioned with this repository. To add upstream-maintained skills alongside them, use the official installation instructions for [Remotion Skills](https://github.com/remotion-dev/skills) and [HyperFrames](https://github.com/heygen-com/hyperframes). Review the resulting skill files for overlap before committing them. We intentionally do not auto-copy every third-party repository because the list contains overlapping engines, sample kits, and discovery catalogs.
+
 ### Integration coverage and honest status
 
 - Runtime dependencies now include Remotion, GSAP, Motion, Lottie Web, and HyperFrames.
