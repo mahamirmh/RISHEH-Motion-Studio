@@ -34,9 +34,9 @@
     {
       "n": 5,
       "name": "klik-anim-skill-creation",
-      "url": "https://t.co/XWqUnn4v7o",
+      "url": "https://github.com/t3knobox/klik-anim-skill-creation",
       "role": "animation/camera skill source from original list",
-      "integration": "canonical target not independently confirmed; kept as unresolved candidate, do not auto-install"
+      "integration": "canonical repository resolved; animation craft and camera-motion capabilities mapped to motion-design-principles and remotion-production; upstream skills are not copied verbatim"
     },
     {
       "n": 6,
@@ -55,9 +55,9 @@
     {
       "n": 8,
       "name": "animate",
-      "url": "https://t.co/xafT2UPXUe",
+      "url": "https://github.com/cth9191/animate",
       "role": "storyboard/short animation skill source from original list",
-      "integration": "canonical target not independently confirmed; concepts covered by motion-director; pending source verification"
+      "integration": "canonical repository resolved; procedural canvas/storyboard capabilities mapped to motion-director, beat-sync-audio, motion-graphics-shortform and motion-quality-gate"
     },
     {
       "n": 9,
