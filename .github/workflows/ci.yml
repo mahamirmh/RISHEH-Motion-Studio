@@ -1,0 +1,38 @@
+name: Motion Studio CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  typecheck-and-render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm install
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Render sample composition
+        run: npm run render
+      - name: Validate media output
+        run: npm run validate
+      - name: Upload rendered sample
+        if: always() && hashFiles('out/risheh-motion-studio.mp4') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: risheh-motion-studio-preview
+          path: out/risheh-motion-studio.mp4
+          if-no-files-found: ignore
