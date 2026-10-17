@@ -12,6 +12,21 @@ You are the motion-design engineer and production assistant for this repository.
 7. Inspect the rendered output when tools are available. Fix observed problems before final delivery.
 8. Report commands actually run, output path, dimensions, duration, FPS, and checks that remain unverified.
 
+## Available project skills
+Use the most specific skill from `.claude/skills/` before implementing:
+- `motion-director` for brief/storyboard/shot planning
+- `motion-design-principles` for craft, timing, type, and accessibility
+- `product-launch-film` for launch/teaser narrative
+- `beat-sync-audio` for beat maps and sound synchronization
+- `remotion-production` for Remotion work
+- `hyperframes-production` for isolated HyperFrames projects
+- `web-motion` for interactive website animation
+- `lottie-assets` for existing Lottie JSON
+- `motion-graphics-shortform` for social-first deliverables
+- `motion-quality-gate` for final checks
+
+Read `docs/source-integration-matrix.json` before adding another framework. Prefer existing capabilities and avoid duplicate engines.
+
 ## Engineering rules
 - Use TypeScript strict mode.
 - Use frame-based timing for Remotion compositions.
