@@ -36,7 +36,7 @@
       "name": "klik-anim-skill-creation",
       "url": "https://github.com/t3knobox/klik-anim-skill-creation",
       "role": "animation/camera skill source from original list",
-      "integration": "canonical repository resolved; animation craft and camera-motion capabilities mapped to motion-design-principles and remotion-production; upstream skills are not copied verbatim"
+      "integration": "Canonical source resolved. Local animation/camera craft is covered by motion-design-principles and remotion-production; upstream source is listed for optional audited import."
     },
     {
       "n": 6,
@@ -57,7 +57,7 @@
       "name": "animate",
       "url": "https://github.com/cth9191/animate",
       "role": "storyboard/short animation skill source from original list",
-      "integration": "canonical repository resolved; procedural canvas/storyboard capabilities mapped to motion-director, beat-sync-audio, motion-graphics-shortform and motion-quality-gate"
+      "integration": "Canonical source resolved. Procedural canvas animation, storyboard check-ins, beat map and review are mapped to motion-director, beat-sync-audio, motion-graphics-shortform and motion-quality-gate."
     },
     {
       "n": 9,
