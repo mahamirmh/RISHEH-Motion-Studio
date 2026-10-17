@@ -6,7 +6,9 @@
   "scripts": {
     "studio": "remotion studio src/index.ts",
     "render": "remotion render src/index.ts RishehIntro out/risheh-motion-studio.mp4",
-    "validate": "node scripts/validate-output.mjs"
+    "validate": "node scripts/validate-output.mjs",
+    "check:tools": "node scripts/check-tools.mjs",
+    "setup:hyperframes": "node scripts/setup-hyperframes.mjs"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",
@@ -15,7 +17,8 @@
     "motion": "^12.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "remotion": "^4.0.0"
+    "remotion": "^4.0.0",
+    "hyperframes": "^0.7.109"
   },
   "devDependencies": {
     "@types/react": "^19.0.0",
